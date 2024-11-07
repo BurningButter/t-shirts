@@ -1,0 +1,25 @@
+<head>
+  <title>T-Shirts</title>
+  <meta content="T-Shirt generator" property="og:description" />
+  <meta content="#FFFFFF" data-react-helmet="true" name="theme-color" />
+  <meta name="viewport" content="width=device-width">
+  <meta charset="UTF-8">
+  <link rel="preload" href="style.css" as="style">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fontlay.com" crossorigin />
+  <link rel="stylesheet" href="https://fontlay.com/css2?family=Itim&family=Creepster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" />
+</head>
+
+<body>
+  <div>
+    <canvas id="gen" width="512px" height="512px">Your browser doesn't want us to generate t-shirts</canvas>
+    <div class="buttons">
+      <button onclick="generateImage();">🧪</button>
+      <button onclick="newCat();">😺</button>
+      <button onclick="newQuote();">✏️</button>
+      <button onclick="newFont(false);">🔤</button>
+      <button onclick="newCat();newQuote();newFont(true);">🎲</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
