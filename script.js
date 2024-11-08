@@ -16,69 +16,137 @@ function newCat() {
 
 function newQuote() {
   quote = "";
-  /*
-  let rand = Math.round(Math.random() * 3)
-  if (rand = 0) {
+  // let rand = Math.round(Math.random() * 3)
+  let rand = 0;
+  if (rand = 0) { // This...
     quote += "This";
-    let rand = Math.round(Math.random() * 2)
-    if (rand = 0) {
+    rand = Math.round(Math.random() * 2)
+    if (rand = 0) { // ...shirt...
       quote += " shirt";
-
+      if (rand = 0) { // ...features...
+        quote += " features";
+        rand = Math.round(Math.random())
+        if (rand = 0) { // ...a...
+          quote += " a";
+          rand = Math.round(Math.random())
+          if (rand = 0) { // ...silly...
+            quote += " silly";
+            rand = Math.round(Math.random())
+            if (rand = 0) { // ...creature.
+              quote += " creature.";
+            }
+            else if (rand = 1) { // ...thingy.
+              quote += " thingy.";
+            }
+          }
+          else if (rand = 1) { // ...alien lifeform.
+            quote += "n alien lifeform.";
+          }
+        }
+        else if (rand = 1) { // ...this...
+          quote += " this";
+          rand = Math.round(Math.random())
+            if (rand = 0) { // ...lil dude.
+              quote += " lil dude.";
+            }
+            else if (rand = 1) { // ...silly creature.
+              quote += " silly creature.";
+            }
+        }
+      }
+      else if (rand = 1) { // ...reminds me of...
+        quote += " reminds me of";
+        rand = Math.round(Math.random())
+        if (rand = 0) { // ...cats.
+          quote += " cats.";
+        }
+        else if (rand = 1) { // ...candy.
+          quote += " candy.";
+        }
+      }
     }
-    else if (rand = 1) {
+    else if (rand = 1) { // ...cat...
       quote += " cat";
-      let rand = Math.round(Math.random())
-      if (rand = 0) {
+      rand = Math.round(Math.random())
+      if (rand = 0) { // ...loves...
         quote += " loves";
-        let rand = Math.round(Math.random() * 2)
-        if (rand = 0) {
+        rand = Math.round(Math.random() * 2)
+        if (rand = 0) { // ...pizza.
           quote += " pizza.";
         }
-        else if (rand = 1) {
+        else if (rand = 1) { // ...sleeping.
           quote += " sleeping.";
         }
-        else if (rand = 2) {
+        else if (rand = 2) { // ...other cats.
           quote += " other cats.";
         }
       }
-      else if (rand = 1) {
+      else if (rand = 1) { // ...hates...
         quote += " hates";
-        let rand = Math.round(Math.random())
-        if (rand = 0) {
+        rand = Math.round(Math.random())
+        if (rand = 0) { // ...this shirt.
           quote += " this shirt.";
         }
-        else if (rand = 1) {
+        else if (rand = 1) { // ...Julius Caesar.
           quote += " Julius Caesar.";
         }
       }
     }
-    else if (rand = 2) {
+    else if (rand = 2) { // ...image...
       quote += " image";
+      rand = Math.round(Math.random())
+      if (rand = 0) { // ...is...
+        quote += " is";
+        rand = Math.round(Math.random() * 3)
+        if (rand = 0) { // ...cat.
+          quote += " a cat.";
+        }
+        else if (rand = 1) { // ...creature.
+          quote += " a creature.";
+        }
+        else if (rand = 2) { // ...funny.
+          quote += " funny.";
+        }
+        else if (rand = 3) { // ...not funny.
+          quote += " not funny.";
+        }
+      }
+      else if (rand = 1) { // ...represents...
+        quote += " represents";
+        rand = Math.round(Math.random())
+        if (rand = 0) { // ...my life.
+          quote += " my life.";
+        }
+        else if (rand = 1) { // ...nothing.
+          quote += " nothing.";
+        }
+      }
     }
   }
-  else if (rand = 1) {
+  /*
+  else if (rand = 1) { // You...
     quote += "You";
   }
-  else if (rand = 2) {
+  else if (rand = 2) { // Life...
     quote += "Life";
   }
-  else if (rand = 3) {
+  else if (rand = 3) { // Cats...
     quote += "Cats";
   }
+    */
   rand = Math.round(Math.random() * 2000);
-  if (rand = 1337) {
+  if (rand = 1337) { // HACK CLUB / HIGH SEAS
     rand = Math.round(Math.random());
-    if (rand = 0) {
+    if (rand = 0) { // HACK CLUB
       quote = "HACK CLUB";
     }
-    else if (rand = 1) {
+    else if (rand = 1) { // HIGH SEAS
       quote = "HIGH SEAS";
     }
   }
-  else if (rand > 1200) {
+  else if (rand > 1200) { // :D
     quote += " :D";
   }
-  */
   generateImage();
 }
 
