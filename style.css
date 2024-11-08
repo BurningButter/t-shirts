@@ -1,32 +1,46 @@
 body {
-    background-color: #1d1d1d;
-    color: #FFFFFF;
+  background-color: #1d1d1d;
+  color: #FFFFFF;
+  text-align: center;
 }
 
 div {
-    display: flex;
+  display: flex;
+}
+
+.title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.content {
+  margin: auto;
+  justify-content: center;
 }
 
 button {
-    border: none;
-    background-color: #292929;
-    margin: 10px;
-    width: 50px;
-    height: 50px;
-    font-size: large;
+  border: none;
+  background-color: #292929;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: large;
 }
+
 button:hover {
-    background-color: #2c2c2c;
+  background-color: #2c2c2c;
 }
+
 button:active {
-    background-color: #393939;
+  background-color: #393939;
 }
 
 .buttons {
-    flex-direction: column;
+  flex-direction: column;
 }
 
-
 .hidden {
-    display: none;
+  display: none;
 }

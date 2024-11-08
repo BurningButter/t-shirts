@@ -1,3 +1,5 @@
+<img src="https://cloud-j0xptrubl-hack-club-bot.vercel.app/0group_8.png" width=240px>
+
 T-shirt randomiser
 ===============
 
@@ -13,7 +15,7 @@ Features
 ---------------
 
 + Images from [TheCatAPI.com](https://thecatapi.com/)
-+ Quotes using a high-tech system of "nested algorithmic stochastic conditionals"
++ ____+ possible quotes with my high-tech system of "nested algorithmic stochastic conditionals"
 + A base t-shirt image of unknown origin
 
 Inspiration

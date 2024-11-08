@@ -15,40 +15,76 @@ function newCat() {
 }
 
 function newQuote() {
-  /*quote = "";
-  let rand = Math.floor(Math.random() * 3)
+  quote = "";
+  /*
+  let rand = Math.round(Math.random() * 3)
   if (rand = 0) {
-    quote += "Usually";
-    rand = Math.floor(Math.random() * 3);
+    quote += "This";
+    let rand = Math.round(Math.random() * 2)
     if (rand = 0) {
+      quote += " shirt";
 
     }
     else if (rand = 1) {
-
+      quote += " cat";
+      let rand = Math.round(Math.random())
+      if (rand = 0) {
+        quote += " loves";
+        let rand = Math.round(Math.random() * 2)
+        if (rand = 0) {
+          quote += " pizza.";
+        }
+        else if (rand = 1) {
+          quote += " sleeping.";
+        }
+        else if (rand = 2) {
+          quote += " other cats.";
+        }
+      }
+      else if (rand = 1) {
+        quote += " hates";
+        let rand = Math.round(Math.random())
+        if (rand = 0) {
+          quote += " this shirt.";
+        }
+        else if (rand = 1) {
+          quote += " Julius Caesar.";
+        }
+      }
     }
     else if (rand = 2) {
-
-    }
-    else if (rand = 3) {
-
+      quote += " image";
     }
   }
   else if (rand = 1) {
-
+    quote += "You";
   }
   else if (rand = 2) {
-
+    quote += "Life";
   }
   else if (rand = 3) {
-
-  }*/
- quote = "quote" + (Math.floor(Math.random() * 8)) + 1;
- generateImage();
+    quote += "Cats";
+  }
+  rand = Math.round(Math.random() * 2000);
+  if (rand = 1337) {
+    rand = Math.round(Math.random());
+    if (rand = 0) {
+      quote = "HACK CLUB";
+    }
+    else if (rand = 1) {
+      quote = "HIGH SEAS";
+    }
+  }
+  else if (rand > 1200) {
+    quote += " :D";
+  }
+  */
+  generateImage();
 }
 
 function newFont(random) {
   if (random) {
-    font = Math.floor(Math.random() * (fonts.length - 1));
+    font = Math.round(Math.random() * (fonts.length - 1));
   }
   else {
     font++;
