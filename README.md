@@ -3,7 +3,7 @@
 T-shirt randomiser
 ===============
 
-A small website for Hack Club "[High-Seas](https://highseas.hackclub.com/)" that randomly grabs cat pictures and makes quotes to put on a t-shirt.
+A small website for Hack Club "[High-Seas](https://highseas.hackclub.com/)" that randomly grabs cat pictures and makes quotes to put on a t-shirt. (unfinished)
 
 Demo
 ---------------
