@@ -7,14 +7,13 @@ let cat = new Image;
 let quote = "";
 let font = 0;
 
-function newCat() {
+async function newCat() {
   getData().then(result => {
-    cat.src = result;
-    generateImage();
+    cat.src = result
   });
 }
 
-function newQuote() {
+async function newQuote() {
   quote = "";
   // let rand = Math.round(Math.random() * 3)
   let rand = 0;
@@ -46,12 +45,12 @@ function newQuote() {
         else if (rand == 1) { // ...this...
           quote += " this";
           rand = Math.round(Math.random())
-            if (rand == 0) { // ...lil dude.
-              quote += " lil dude.";
-            }
-            else if (rand == 1) { // ...silly creature.
-              quote += " silly creature.";
-            }
+          if (rand == 0) { // ...lil dude.
+            quote += " lil dude.";
+          }
+          else if (rand == 1) { // ...silly creature.
+            quote += " silly creature.";
+          }
         }
       }
       else if (rand == 1) { // ...reminds me of...
@@ -148,20 +147,14 @@ function newQuote() {
   if (rand == 2) { // :D
     quote += " :D";
   }
-  generateImage();
 }
 
-function newFont(random) {
-  if (random) {
-    font = Math.round(Math.random() * (fonts.length - 1));
+async function newFont() {
+  let newFont = Math.round(Math.random() * (fonts.length - 1));
+  while (newFont == font) {
+    newFont = Math.round(Math.random() * (fonts.length - 1));
   }
-  else {
-    font++;
-    if (font > 3) {
-      font = 0;
-    }
-  }
-  generateImage();
+  font = newFont;
 }
 
 function generateImage() {
@@ -185,4 +178,26 @@ async function getData() {
   } catch (error) {
     console.error(error.message);
   }
+}
+
+async function catButton() {
+  await newCat();
+  generateImage();
+}
+
+async function quoteButton() {
+  await newQuote();
+  generateImage();
+}
+
+async function fontButton() {
+  await newFont();
+  generateImage();
+}
+
+async function allButton() {
+  newCat();
+  newQuote();
+  await newFont();
+  generateImage();
 }
