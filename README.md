@@ -1,6 +1,6 @@
-<img src="https://cloud-j0xptrubl-hack-club-bot.vercel.app/0group_8.png" width=240px>
+<img src="https://cloud-7rag1ktup-hack-club-bot.vercel.app/0frame_76.png" width=240px>
 
-T-shirt randomiser
+T-shirt Generator
 ===============
 
 A small website for Hack Club "[High-Seas](https://highseas.hackclub.com/)" that randomly grabs cat pictures and makes quotes to put on a t-shirt. (unfinished)
@@ -15,7 +15,7 @@ Features
 ---------------
 
 + Images from [TheCatAPI.com](https://thecatapi.com/)
-+ ____+ possible quotes with my high-tech system of "nested algorithmic stochastic conditionals"
++ 9200+ possible quotes with my high-tech system of "nested algorithmic stochastic conditionals"
 + A base t-shirt image of unknown origin
 
 Inspiration
