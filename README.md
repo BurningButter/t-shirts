@@ -3,7 +3,7 @@
 T-shirt Generator
 ===============
 
-A small website for Hack Club "[High-Seas](https://highseas.hackclub.com/)" that randomly grabs cat pictures and makes quotes to put on a t-shirt. (unfinished)
+A small website for Hack Club "[High-Seas](https://highseas.hackclub.com/)" that randomly grabs cat pictures and makes quotes to put on a t-shirt.
 
 Demo
 ---------------

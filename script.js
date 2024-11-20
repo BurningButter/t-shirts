@@ -8,15 +8,16 @@ let quote = "";
 let font = 0;
 
 async function newCat() {
-  getData().then(result => {
+  await getData().then(result => {
     cat.src = result
   });
+  await new Promise(r => setTimeout(r, 100));
+  console.log("Fetched cat");
 }
 
 async function newQuote() {
   quote = "";
-  // let rand = Math.round(Math.random() * 3)
-  let rand = 0;
+  let rand = Math.round(Math.random() * 1)
   if (rand == 0) { // This...
     quote += "This";
     rand = Math.round(Math.random() * 2)
@@ -122,13 +123,67 @@ async function newQuote() {
       }
     }
   }
-  /*
   else if (rand == 1) { // You...
     quote += "You";
+    rand = Math.round(Math.random())
+    if (rand == 0) { // ...deserve...
+      quote += " deserve";
+      rand = Math.round(Math.random())
+      if (rand == 0) { // ...a good life.
+        quote += " a good life.";
+      }
+      else if (rand == 1) { // ...this cat image.
+        quote += " this cat image.";
+      }
+    }
+    else if (rand == 1) { // ...are...
+      quote += " are";
+      rand = Math.round(Math.random())
+      if (rand == 0) { // ...just like this cat.
+        quote += " just like this cat.";
+      }
+      else if (rand == 1) { // ...a great person.
+        quote += " a great person.";
+      }
+    }
   }
   else if (rand == 2) { // Life...
     quote += "Life";
+    rand = Math.round(Math.random() * 2)
+    if (rand == 0) { // ...could be a dream.
+      quote += " could be a dream.";
+    }
+    else if (rand == 1) { // ... your life was incomplete...
+      quote += " is like";
+      rand = Math.round(Math.random() * 2)
+      if (rand == 0) { // ...without a cat.
+        quote += " without a cat.";
+      }
+      else if (rand == 1) { // ...without this cat.
+        quote += " without this cat."
+      }
+      else if (rand == 2) { // ...until you've seen this cat.
+        quote += " until you've seen this cat."
+      }
+    }
+    else if (rand == 2) { // ...is...
+      quote += " is";
+      rand = Math.round(Math.random() * 3)
+      if (rand == 0) { // ...amazing.
+        quote += " amazing.";
+      }
+      else if (rand == 1) { // ...so fun.
+        quote += " so fun.";
+      }
+      else if (rand == 2) { // ...good.
+        quote += " good.";
+      }
+      else if (rand == 3) { // ...beautiful.
+        quote += " beautiful.";
+      }
+    }
   }
+  /*
   else if (rand == 3) { // Cats...
     quote += "Cats";
   }
@@ -147,6 +202,8 @@ async function newQuote() {
   if (rand == 2) { // :D
     quote += " :D";
   }
+  await new Promise(r => setTimeout(r, 100));
+  console.log("Generated quote:\n" + quote);
 }
 
 async function newFont() {
@@ -155,6 +212,8 @@ async function newFont() {
     newFont = Math.round(Math.random() * (fonts.length - 1));
   }
   font = newFont;
+  await new Promise(r => setTimeout(r, 100));
+  console.log("Got font");
 }
 
 function generateImage() {
@@ -183,16 +242,19 @@ async function getData() {
 async function catButton() {
   await newCat();
   generateImage();
+  console.log("Set cat");
 }
 
 async function quoteButton() {
   await newQuote();
   generateImage();
+  console.log("Set quote");
 }
 
 async function fontButton() {
   await newFont();
   generateImage();
+  console.log("Set font");
 }
 
 async function allButton() {
@@ -200,4 +262,12 @@ async function allButton() {
   newQuote();
   await newFont();
   generateImage();
+  console.log("Set all");
+}
+
+function download() {
+  const link = document.createElement("a");
+  link.download = "shirt.png";
+  link.href = c.toDataURL();
+  link.click();
 }
